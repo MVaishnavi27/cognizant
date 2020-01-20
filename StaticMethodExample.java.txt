@@ -1,0 +1,14 @@
+class StaticMethodExample
+{
+	static int num;//static variable
+	int a;//nono static variable or instance variable
+	static void setStatic(int a)//static method
+	{
+		num=a;
+		System.out.println(a);
+	}
+	public static void main(String args[])
+	{
+	setStatic(10);
+	}
+}

@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+E:\cognizant\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4181431292.index
+1312584132.index
+4014237064.index
+68653957.index
+1310895480.index
+2411741559.index
+780929255.index
+1910410851.index

@@ -1,0 +1,15 @@
+package com;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+public class LambdaExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Employee1> list=new ArrayList<Employee1>();
+		
+
+	}
+
+}

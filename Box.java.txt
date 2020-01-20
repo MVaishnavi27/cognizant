@@ -1,0 +1,41 @@
+class Box
+{
+	
+	float l,b,h,v;
+	Box()
+	{
+	l=2;
+	b=3;
+	h=2;
+	System.out.println("Volume"+(l*b*h));
+	}
+	Box(float l1,float b1,float h1)
+	{
+		l=l1;
+		b=b1;
+		h=h1;
+		System.out.println("Volume"+(l*b*h));
+	}
+	void setBox(float bl,float bb,float bh)
+	{
+		l=bl;
+		b=bb;
+		h=bh;
+	}
+	void getBox()
+	{
+		System.out.println("len"+l+"Breadth"+b+"Height"+h);
+		System.out.println("volume"+(l*b*h));
+	}
+	/*void calculateVolume()
+	{
+	v=l*b*h;*/
+public static void main(String args[])
+{
+Box b=new Box();
+b.setBox(1,2,3);
+b.getBox();
+}
+	
+	
+}
