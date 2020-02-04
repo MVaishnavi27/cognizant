@@ -1,10 +1,9 @@
 package com;
-
 import javax.persistence.*;  
 
 @Entity  
-@Table(name = "employee102")  
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)  
+@Table(name = "employee103")  
+@Inheritance(strategy=InheritanceType.JOINED)  
   
 public class Employee {  
 @Id  

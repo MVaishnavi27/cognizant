@@ -1,12 +1,10 @@
 package com;
-import javax.persistence.*;  
 
+import javax.persistence.*;  
+  
 @Entity  
-@Table(name="regularemployee102")  
-@AttributeOverrides({  
-    @AttributeOverride(name="id", column=@Column(name="id")),  
-    @AttributeOverride(name="name", column=@Column(name="name"))  
-})  
+@Table(name="regularemployee103")  
+@PrimaryKeyJoinColumn(name="ID")  
 public class Regular_Employee extends Employee{  
       
 @Column(name="salary")    
@@ -30,4 +28,4 @@ public int getBonus() {
 public void setBonus(int bonus) {
 	this.bonus = bonus;
 }  
-}
+}  
