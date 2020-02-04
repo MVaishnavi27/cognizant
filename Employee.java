@@ -1,11 +1,10 @@
 package com;
+
 import javax.persistence.*;  
 
 @Entity  
-@Table(name = "employee101")  
-@Inheritance(strategy=InheritanceType.SINGLE_TABLE)  
-@DiscriminatorColumn(name="type",discriminatorType=DiscriminatorType.STRING)  
-@DiscriminatorValue(value="employee")  
+@Table(name = "employee102")  
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)  
   
 public class Employee {  
 @Id  
@@ -31,5 +30,5 @@ public String getName() {
 
 public void setName(String name) {
 	this.name = name;
-}   
+}  
 }  

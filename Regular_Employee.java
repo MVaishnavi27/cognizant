@@ -1,9 +1,12 @@
 package com;
-
 import javax.persistence.*;  
-  
+
 @Entity  
-@DiscriminatorValue("regularemployee")  
+@Table(name="regularemployee102")  
+@AttributeOverrides({  
+    @AttributeOverride(name="id", column=@Column(name="id")),  
+    @AttributeOverride(name="name", column=@Column(name="name"))  
+})  
 public class Regular_Employee extends Employee{  
       
 @Column(name="salary")    
@@ -27,4 +30,4 @@ public int getBonus() {
 public void setBonus(int bonus) {
 	this.bonus = bonus;
 }  
-}  
+}
